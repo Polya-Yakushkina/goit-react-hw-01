@@ -7,7 +7,7 @@ export default function FriendListItem({ friend: {avatar, name, isOnline} }) {
             <img className={clsx(css.image)}
                 src={avatar}
                 alt="Avatar"
-                width="48" />
+                width="120" />
             <p className={clsx(css.text)}>{name}</p>
             <p className={clsx(
                 css.status,

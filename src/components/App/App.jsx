@@ -7,10 +7,11 @@ import friends from "../Data/friends.json";
 import transactions from "../Data/transactions.json";
 
 import css from "./App.module.css";
+import clsx from "clsx";
 
 export default function App() {
   return (
-    <div>
+    <div className={clsx(css.app)}>
       <Profile
         name={userData.username}
         tag={userData.tag}

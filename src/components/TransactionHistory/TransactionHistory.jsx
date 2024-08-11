@@ -5,6 +5,7 @@ import TransactionItem from "../TransactionItem/TransactionItem";
 
 export default function TransactionHistory({ items }) {
     return (
+        <div className={clsx(css.container)}>
         <table className={clsx(css.table)}>
             <thead className={clsx(css.header)}>
                 <tr className={clsx(css.headerList)}>
@@ -24,6 +25,7 @@ export default function TransactionHistory({ items }) {
                 })}
                 
             </tbody>
-        </table>
+            </table>
+        </div>
     );
 }
